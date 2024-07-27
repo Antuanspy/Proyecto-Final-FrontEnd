@@ -31,10 +31,10 @@ nav {
  
 
 
-  section img {
+  div img {
     width: 100%; /* make the image full width */
     height: auto; /* set the height to auto, so the image doesn't get cropped */
-    max-height: 400px; /* set a maximum height for the image */
+    max-height: 699px; /* set a maximum height for the image */
     object-fit: contain; /* make the image fit the width, while maintaining its aspect ratio */
     border-radius: 10px; /* add a border radius */
   }

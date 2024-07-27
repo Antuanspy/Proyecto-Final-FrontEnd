@@ -10,14 +10,15 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="app.css">
-    <link rel="stylesheet" href="custom.css">
-    <style>
-      
-    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/custom.css">
+
 </head>
 
-<body>
+<!-- Navbar-->
+
+<body class="raleway-body">
     <div class="container-fluid g-0">
         <nav class="navbar navbar-expand-lg bg-primary">
             <div class="container-fluid">
@@ -28,7 +29,7 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <ul class="navbar-nav m-auto mb-2 mb-lg-0">
                         <li class="nav-item">
                             <a class="nav-link active text-white" aria-current="page" href="#">Features</a>
                         </li>
@@ -46,12 +47,14 @@
                     </ul>
                     <form class="d-flex" role="search">
                         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Search</button>
+                        <button class="btn btn-outline-light" type="submit">Search</button>
                     </form>
                 </div>
             </div>
         </nav>
     </div>
+
+    <!-- Hero -->
     <div class="hero-image">
         <div class="hero-text">
           <h1 style="font-size:50px">CRE Loan Origination Management Software</h1>
@@ -59,23 +62,24 @@
         </div>
       </div>
 
-
+<!-- Loan Funnel container -->
     <main>
-        <h2 class="text-center pt-3"> Our Features </h2>
-        <section>
+        <h2 class="text-center py-3"> Our Features </h2>
+        <div class="container text-center">
+          <div class="row justify-content-center">
             <article class="container-fluid text-center">
                 <div class="row justify-content-center">
-                    <div class="col-4 p-0">
-                        <img class="w-100" src="Funnel image.jpg" alt="Funnel Dashboard">
+                    <div class="col-sm-6 col-md-4 col-lg-6 p-0 d-flex align-items-stretch">
+                        <img class="w-100 object-fit-cover" src="img/Funnel image.jpg" alt="Funnel Dashboard">
                     </div>
-                    <div class="d-flex flex-column justify-content-center align-items-center col-4 bg-primary">
-                        <h3 class="text-white">
+                    <div class="d-flex flex-column justify-content-center align-items-center col-sm-6 col-md-4 col-lg-6 bg-primary">
+                        <h3 class="text-white py-3">
                             Loan Funnel Dashboard
                         </h3>
                         <p class="text-white">
                             Develop and nurture your Loan origination funnel within your custome funnel stages . Map each
                             property loan, measure NRA, upload layout with adobe integration, compare each deal on variables
-                            chosen by you such as DY, LTV, submarket, DSCR, deal stage, term-sheet, Loan Application and others. fjkjsafkjdsajkf fdsafdsa
+                            chosen by you such as DY, LTV, submarket, DSCR, deal stage, term-sheet, Loan Application and others.
                         </p>
                         <button class="bg-success w-50">
                             View more
@@ -83,52 +87,23 @@
                     </div>
                 </div> 
             </article>
-        </section>
+           </div>
+        </div>
        
        
-      <!--   <section class="mt-5">
-            <article>
-                <div class="container text-center">
-                    <div class="row align-items-start">
-                        <div class="col-md-6 d-flex flex-column">
-                            <img class="w-100" src="Img_redimensionada.jpg" alt="Loan Financial Analysis image">
-                            <div class="d-flex flex-column justify-content-center align-items-center bg-primary w-100 p-2">
-                                <h3 class="text-white">Automatic CRE Loan Financial Analysis</h3>
-                                <p class="text-white">
-                                    Upload only the rent roll and T-12 excel files and see how the software automatically gives you
-                                    Debt Yield, LTV, DSCR and other important financial metrics.
-                                </p>
-                                <button class="bg-success w-50 text-white">View more</button>
-                            </div>
-                        </div>
-                        <div class="col-md-6 d-flex flex-column">
-                            <img class="w-100" src="boe Image.jpg" alt="BOE Image">
-                            <div class="d-flex flex-column justify-content-center align-items-center bg-primary w-100 p-2">
-                                <h3 class="text-white">BOE Loan Map</h3>
-                                <p class="text-white">
-                                    Analyze any property with our Back-of-the-envelope map Loan based on market rents,
-                                    property type, tenants, vacancy, and other variables, so you can target prospects easier.
-                                </p>
-                                <button class="bg-success w-50 text-white">View more</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </article>
-        </section>
-         -->
-
+     
+<!-- 2 tarjetas desde bootstrapp-->
          <div class="container text-center">
             <div class="row justify-content-center mt-5">
               <div class="col-12 col-sm-6 col-lg-6 d-flex justify-content-center">
                 <!-- Aqui insertas la tarjeta -->
                 <div class="card" style="width: 100%;">
-                  <img src="Img_redimensionada.jpg" class="card-img-top" alt="...">
+                <img src="https://media.istockphoto.com/id/1311598658/photo/businessman-trading-online-stock-market-on-teblet-screen-digital-investment-concept.jpg?s=612x612&w=0&k=20&c=HYlIJ1VFfmHPwGkM3DtVIFNLS5ejfMMzEQ81ko534ak="
+                    class="card-img-top" alt="image left">
                   <div class="card-body">
                     <h5 class="card-title">Automatic CRE Loan Financial Analysis</h5>
-                    <p class="card-text"> Upload only the rent roll and T-12 excel files and see how the software automatically
-                      gives you
-                      Debt Yield, LTV, DSCR and other important financial metrics.</p>
+                    <p class="card-text"> Upload  the rent roll and T-12 excel files and see how the software automatically
+                      gives you Debt Yield, LTV, DSCR and other important financial metrics.</p>
                     <a href="#" class="btn btn-primary">View feature example</a>
                   </div>
                 </div>
@@ -136,11 +111,11 @@
               <div class="col-12 col-sm-6 col-lg-6 d-flex justify-content-center">
                 <!-- Aqui insertas la tarjeta -->
                 <div class="card" style="width: 100%;">
-                  <img src="boe Image.jpg" class="card-img-top" alt="...">
+                  <img src="img/boe Image.jpg" class="card-img-top" alt="...">
                   <div class="card-body">
                     <h5 class="card-title">BOE Loan Map</h5>
-                    <p class="card-text">Analyze any property with our Back-of-the-envelope map Loan based on market rents,
-                      property type, tenants, vacancy, and other variables, so you can target prospects easie.</p>
+                    <p class="card-text">Analyze any property with our Back-of-the-envelope map based on the property rents,
+                      property type, tenants, vacancy, and other variables, so you can target prospects easier.</p>
                     <a href="#" class="btn btn-primary">View Feature Example</a>
                   </div>
                 </div>
@@ -149,118 +124,147 @@
           </div>
 
        
-        <section>
 
-            
-            <article>
-                <img src="" alt="Follow Ups" />
-                <div>
-                    <h3>Automatic Deal Follow Ups </h3>
-                    <p>
-                        Follow up with your active Loan origination deals by integrating our software to CRM's like
-                        Salesforce, HubSpot and Dynamics.
-                    </p>
-                    <button>View more</button>
+        <!-- Contenedor con 3 tarjetas bootstrapp -->
+        <div class="container text-center">
+            <div class="row justify-content-center mt-5">
+              <div class="col-12 col-sm-4 col-lg-4 d-flex justify-content-center">
+                <!-- Aqui insertas la tarjeta -->
+                <div class="card" style="width: 100%;">
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxEIp8F7wRM8FYqZnWbHzG3gDw3RgtqdYtcQ&s" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Term-Sheet and Loan Application generator </h5>
+                    <p class="card-text"> automatically generate a complete term-sheet and loan app
+                      with your customized branding based on the input and automatic data.</p>
+                    <a href="#" class="btn btn-primary small-btn">View feature example</a>
+                  </div>
                 </div>
-            </article>
-            <article>
-                <img src="" alt="CRE Market Data" />
-                <div>
-                    <h3>CRE Market data and financial data </h3>
-                    <p>
-                        Get live minute by minute data change inside the platform for Mexican and USA Risk-free rates,
-                        SOFR swaps, CDS,
-                        SOFR and TIIE, Rents by submarket and by asset type, view top reports from CRE brokerage sites.
-                    </p>
-                    </span>
-                    <button>View more</button>
+              </div>
+              <div class="col-12 col-sm-4 col-lg-4 d-flex justify-content-center">
+                <!-- Aqui insertas la tarjeta -->
+                <div class="card" style="width: 100%;">
+                  <img src="img/boe Image.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Document Management</h5>
+                    <p class="card-text">Upload and see any document in our document viewer inside the app,
+                      so you can access it from anywhere.</p>
+                    <a href="#" class="btn btn-primary small-btn">View Feature Example</a>
+                  </div>
                 </div>
-            </article>
-            <article>
-                <img src="" alt="Document Management" />
-                <div>
-                    <h3>Document Management for Due-Diligence </h3>
-                    <p>
-                        Create your due-diligence checklist with document management inculded for each third party study
-                        like Valuations, environemntal studies, physical assesments, inplace leases, title documents,
-                    </p>
-                    <button>View more</button>
+              </div>
+              <div class="col-12 col-sm-4 col-lg-4 d-flex justify-content-center">
+                <!-- Aqui insertas la tarjeta -->
+                <div class="card" style="width: 100%;">
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTql26z0fGCRCV65asu-iZDTKdgw5IUd77cIQ&s" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">CMBS integration</h5>
+                    <p class="card-text"> Upload only the rent roll and T-12 excel files and see how the software automatically
+                      gives you
+                      Debt Yield, LTV, DSCR and other important financial metrics.</p>
+                    <a href="#" class="btn btn-primary small-btn">View feature example</a>
+                  </div>
                 </div>
-            </article>
+              </div>
+            </div>
+          </div>
+        
+          <h2 class="text-center py-3">CRE Sectors</h2>
+          
+<section class="row justify-content-center">
+  <div class="col-md-2 mb-4">
+    <div class="card h-100">
+      <img src="https://images.ramaker.com/wp-content/uploads/2022/03/17151634/hexs-roseville-exterior-day1-1024x674.jpg" alt="" class="card-img-top">
+      <div class="card-body">
+        <h2 class="card-title text-center">Hotels</h2>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-2 mb-4">
+    <div class="card h-100">
+      <img src="https://images1.loopnet.com/i2/kqPvQf98Qhr-db_3uF9DdYlqbK-_QkCbCqsp-fuClxI/106/retail-property-for-lease-42390-bob-hope-dr-rancho-mirage-ca-92270.jpg" alt="" class="card-img-top">
+      <div class="card-body">
+        <h2 class="card-title text-center">Retail</h2>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-2 mb-4">
+    <div class="card h-100">
+      <img src="https://content.macquarie.com/fibra-macquarie/images/properties-hero.jpg" alt="" class="card-img-top">
+      <div class="card-body">
+        <h2 class="card-title text-center">Industrial</h2>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-2 mb-4">
+    <div class="card h-100">
+      <img src="https://www.resmanagement.in/img/blog/commercial-properties-in-ahemedabad-res-management.webp" alt="" class="card-img-top">
+      <div class="card-body">
+        <h2 class="card-title text-center">Office</h2>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-2 mb-4">
+    <div class="card h-100">
+      <img src="https://www.realvantage.co/insights/content/images/2020/11/Condominium-and-Apartment.jpg" alt="" class="card-img-top">
+      <div class="card-body">
+        <h2 class="card-title text-center">Multifamily</h2>
+      </div>
+    </div>
+  </div>
+</section>
+        
 
-        </section>
-        <h2>CRE Sectors</h2>
-        <section>
-            <article>
-                <div>
-                    <h2>Hospitalty</h2>
-                </div>
-            </article>
-            <article>
-                <div>
-                    <h2>Retail</h2>
-                </div>
-                <article>
-                    <div>
-                        <h2>Industrial</h2>
-                    </div>
+          
+
+        <!-- Footer -->
+        <footer class="bg-dark-grey text-center text-white">
+            <section class="row gx-0 py-5">
+                <!-- CATEGORIAS -->
+                <article class="col-lg-4 pb-4 pb-lg-0" >
+                    <h3 class="text-white pt-3">CRE Sectors</h3>
+                    <nav>
+                        <ul class="list-unstyled lh-lg text-white">
+                            <li><a href="#" class="text-white text-decoration-none">Hotels</a></li>
+                            <li><a href="#" class="text-white text-decoration-none">Retail</a></li>
+                            <li><a href="#" class="text-white text-decoration-none">Industrial</a></li>
+                            <li><a href="#" class="text-white text-decoration-none">Office</a></li>
+                            <li><a href="#" class="text-white text-decoration-none">Multifamily</a></li>
+                        </ul>
+                    </nav>
                 </article>
-                <article>
-                    <div>
-                        <h2>Office</h2>
-                    </div>
+                <article class="col-lg-4 pb-4 pb-lg-0 bg">
+                    <h3 class="text-white pt-3">About us</h3>
+                    <nav>
+                        <ul class="list-unstyled lh-lg text-white">
+                            <li><a href="#" class="text-white text-decoration-none">Our H1 </a></li>
+                            <li><a href="#" class="text-white text-decoration-none">Features</a></li>
+                            <li><a href="#" class="text-white text-decoration-none">Feature Requests</a></li>
+                            <li><a href="#" class="text-white text-decoration-none">Team</a></li>
+                            <li><a href="#" class="text-white text-decoration-none">Contact</a></li>
+                        </ul>
+                    </nav>
                 </article>
-            </article>
-        </section>
-    </main>
-    <footer>
-        <section>
-            <article>
-                <h3>CRE Sectors</h3>
-                <nav>
-                    <ul>
-                        <li><a href="">Hospitalty</a></li>
-                        <li><a href="">Retail</a></li>
-                        <li><a href="">Industrial</a></li>
-                        <li><a href="">Office </a></li>
-                    </ul>
-                </nav>
-            </article>
-            <article>
-                <h3>
-                    Features
-                </h3>
-                <nav>
-                    <ul>
-                        <li><a href="">Loan Funnel Dashboard</a></li>
-                        <li><a href="">CRE Debt Financial Analysis</a></li>
-                        <li><a href="">Back-of-the envelope Map Analyzer</a></li>
-                        <li><a href="">Follow Ups</a></li>
-                        <li><a href="">CRE Market Data</a></li>
-                        <li><a href="">Document Management</a></li>
-                    </ul>
-                </nav>
-            </article>
-            <article>
-                <h3>
-                    Direct Contact
-                </h3>
-                <nav>
-                    <ul>
-                        <li><a href="">Whatsapp</a></li>
-                        <li><a href="">Email</a></li>
-                        <li><a href="">Books</a></li>
-                    </ul>
-                </nav>
-            </article>
-        </section>
-        <section>
-            <h2>All rights reserved. CRELOMS</h2>
-        </section>
-    </footer>
+                <article class="col-lg-4">
+                    <h3 class="text-white pt-3">Contact Us</h3>
+                    <nav>
+                        <ul class="list-unstyled lh-lg text-white">
+                            <li><a href="#" class="text-white text-decoration-none">Whatsapp</a></li>
+                            <li><a href="#" class="text-white text-decoration-none">Email</a></li>
+                            <li><a href="#" class="text-white text-decoration-none">Facebbok</a></li>
+                            <li><a href="#" class="text-white text-decoration-none">Instagram</a></li>
+                            <li><a href="#" class="text-white text-decoration-none">Linkedln</a></li>
+                        </ul>
+                    </nav>
+                </article>
+            </section>
+            <section class="bg-black py-4">
+                <h2 class="fs-5">Rights reserved</h2>
+            </section>
+        </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
+        crossorigin="anonymous">
+    </script>
 </body>
 
 </html>
